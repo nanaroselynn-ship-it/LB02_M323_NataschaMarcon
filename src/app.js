@@ -25,12 +25,12 @@ function toggleAnswer(cards, id) {
 }
 
 function rateCard(cards, id, rating) {
-  const delta = rating === "gut :) " ? 1 : rating === "perfekt wooow :D " ? 2 : null
+  const delta = rating === "gut" ? 1 : rating === "perfekt" ? 2 : null
 
   return cards.map(c => {
     if (c.id !== id) return c
 
-    if (rating === "katastrophe Antwort :( ") return { ...c, ranking: 0 }
+    if (rating === "schlecht") return { ...c, ranking: 0 }
     if (delta === null) return c
 
     return { ...c, ranking: c.ranking + delta }
@@ -64,9 +64,9 @@ cards = addCard(cards, c6)
 cards = toggleAnswer(cards, c1.id)
 
 
-cards = rateCard(cards, c1.id, "pgut :)")
-cards = rateCard(cards, c2.id, "perfekt wooow :D ")
-cards = rateCard(cards, c3.id, "katastrophe Antwort :( ")
+cards = rateCard(cards, c1.id, "gut")
+cards = rateCard(cards, c2.id, "perfekt")
+cards = rateCard(cards, c3.id, "schlecht")
 
 
 cards = editCard(cards, c3.id, "Was ist JavaScript?", "Eine Sprache für interaktive Web-Apps")

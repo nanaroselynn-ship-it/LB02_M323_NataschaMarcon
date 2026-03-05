@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Nanao-Quizkarten</title>
+
+  <style>
+    body{
+      font-family: Arial;
+      background-color:#ffd6ec;
+      text-align:center;
+    }
+    #cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        max-width: 1000px;
+        margin: 20px auto;
+    }
+    .card{
+      background:white;
+      padding:20px;
+      margin:20px auto;
+      width:300px;
+      border-radius:10px;
+      box-shadow:0 0 10px rgba(0,0,0,0.2);
+    }
+
+    button{
+      background:#ff4da6;
+      color:white;
+      border:none;
+      padding:10px;
+      margin:5px;
+      border-radius:5px;
+      cursor:pointer;
+    }
+    button:hover{background:#ff1a8c;}
+
+    .answerBtn{
+      display:block;
+      margin:10px auto;
+    }
+
+    .actions{
+      display:flex;
+      justify-content:center;
+      gap:8px;
+      flex-wrap:wrap;
+      margin-top:10px;
+    }
+
+    #addForm{
+      max-width:1000px;
+      margin:20px auto 0 auto;
+      display:flex;
+      justify-content:center;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    #addForm input{
+      padding:10px;
+      border-radius:6px;
+      border:1px solid #ccc;
+      width:300px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Nanao-Quizkarten</h1>
+
+  <div id="addForm">
+    <input id="qInput" placeholder="Frage" />
+    <input id="aInput" placeholder="Antwort" />
+    <button id="addBtn">+ Karte hinzufügen</button>
+  </div>
+
+  <div id="cards"></div>
+
+  <script src="./src/app.js"></script>
+  <script src="./src/ui.js"></script>
+  <script src="./tests/app.test.js"></script>
+</body>
+</html>
+
