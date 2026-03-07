@@ -83,7 +83,7 @@ cards = editCard(cards, c3.id, "Was ist JavaScript?", "Eine Sprache für interak
 cards = deleteCard(cards, c2.id)
 
 // print sorted card
-console.log(sortByRanking(cards))
+
 
 export {
   createCard,
