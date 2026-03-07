@@ -11,7 +11,7 @@ describe("Card App Funktionen", () => {
   let testCards;
 
   beforeEach(() => {
-    testCards = []; // Vor jedem Test die Liste leeren
+    testCards = [];
   });
 
   test("sollte eine Karte korrekt erstellen", () => {

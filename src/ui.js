@@ -1,3 +1,5 @@
+import { createCard, addCard, editCard, deleteCard, toggleAnswer, rateCard, sortByRanking } from './app.js';
+
 // wait until the page is fully loaded
 window.addEventListener("DOMContentLoaded", () => {
   let cards = []
