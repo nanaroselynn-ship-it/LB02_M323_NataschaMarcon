@@ -84,3 +84,13 @@ cards = deleteCard(cards, c2.id)
 
 // print sorted card
 console.log(sortByRanking(cards))
+
+export {
+  createCard,
+  addCard,
+  editCard,
+  deleteCard,
+  toggleAnswer,
+  rateCard,
+  sortByRanking
+}

@@ -1,0 +1,24 @@
+{
+  "name": "quizkarten-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanaroselynn-ship-it/LB02_M323_NataschaMarcon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/nanaroselynn-ship-it/LB02_M323_NataschaMarcon/issues"
+  },
+  "homepage": "https://github.com/nanaroselynn-ship-it/LB02_M323_NataschaMarcon#readme"
+}

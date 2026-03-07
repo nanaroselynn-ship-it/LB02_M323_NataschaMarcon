@@ -1,13 +1,20 @@
+import {
+  createCard,
+  addCard,
+  toggleAnswer,
+  rateCard,
+  editCard,
+  deleteCard
+} from "../src/app.js"
+
 const card = createCard("Frage", "Antwort")
 console.assert(card.question === "Frage", "createCard Frage falsch")
 console.assert(card.answer === "Antwort", "createCard Antwort falsch")
 
 let testCards = []
 
-
 testCards = addCard(testCards, card)
 console.assert(testCards.length === 1, "addCard funktioniert nicht")
-
 
 testCards = toggleAnswer(testCards, card.id)
 console.assert(testCards[0].showAnswer === true, "toggleAnswer funktioniert nicht")
